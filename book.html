@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Dew Drops Resort Ella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>6th Mail Post,pssara Road,Ella Srilanka.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class=" sub-header2">
+    <nav>
+        <a href=""><img src=""></a>
+        <div class="nav-links" id="navLinks">
+            </ul>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="img/logo1.jpg" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="index.html">about</a> </li>
+          <li> <a href="index.html">room</a> </li>
+          <li> <a href="book.html">book now</a> </li>
+          <li> <a href="index.html">services</a> </li>
+          <li> <a href="index.html">shop</a> </li>
+          <li> <a href="index.html">testimonials</a> </li>
+          <li> <a href="index.html">gallary</a> </li>
+          <li> <a href="index.html">blog</a> </li>
+          <li> <a href="index.html">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+94 71100 8791</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            
+        </div>
+        <div class="contact-col">
+            <p>Book now</p>
+            <h6>(plese enter correct information)</h6>
+            <form action="book_form.php"method="post" class="book-form">
+                <span>name </span>
+                <input type="text"  placeholder="Enter Your name" name="name">
+                <span>email </span>
+                <input type="email" placeholder="Enter Your Email Address"name="email">
+                <span>Phone </span>
+                <input type="number" placeholder="enter your phone number"name="phone">
+                <span>adddress </span>
+                <input type="text" placeholder="enter your address/country"name="address">
+                <span>how many </span>
+                <input type="number" placeholder="number of guests"name="guests">
+                <span>arrivals </span>
+                <input type="date" name="arrivals">
+                <span>leaving </span>
+                <input type="date" name="leaving">
+                
+                <input type="submit" value="submit" class="btn" name="send">
+            </form>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+  
+</body>
+
+
+</html>
